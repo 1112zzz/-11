@@ -43,7 +43,7 @@ func update_hearts(hp: float, _max_hp: float) -> void:
 			heart_nodes[i].texture = tex_empty
 
 
-var is_dead: bool = false  # 新增：死亡标记
+var is_dead: bool = false # 新增：死亡标记
 
 # 玩家死亡触发
 func on_player_dead():
@@ -51,6 +51,6 @@ func on_player_dead():
 	print("玩家死亡，按F重新开始")
 
 # 检测按键
-func _input(_event: InputEvent):
-	if is_dead and Input.is_key_pressed(KEY_F):
+func _unhandled_input(event: InputEvent):
+	if is_dead and event.is_key_just_pressed(KEY_F):
 		get_tree().reload_current_scene()
