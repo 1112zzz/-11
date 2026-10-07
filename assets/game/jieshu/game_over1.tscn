@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bwx8yoobo0e4y"]
+
+[ext_resource type="Texture2D" uid="uid://baxk4fmryamb7" path="res://assets/game/jieshu/game_over1.jpg" id="1_ooqbe"]
+
+[node name="Node2D" type="TextureRect" unique_id=1658250885]
+offset_left = 135.0
+offset_top = 2.0
+offset_right = 857.0
+offset_bottom = 880.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_ooqbe")
